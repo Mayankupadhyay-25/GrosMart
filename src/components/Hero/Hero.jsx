@@ -12,7 +12,7 @@ const Hero = () => {
                 <h1 className='md:text-7xl/20 text-5xl/14 font-bold mt-4 '>
                     Tasty Organic <span className='text-orange-500'>Fruits</span> & <span className='text-orange-500'>Veggies </span> <br/> In Your City
                 </h1>
-                <p className='text-zinc-600 text-lg max-w-[530px] mt-5 mb-10'>
+                <p className='text-zinc-600 md:text-lg max-w-[530px] mt-5 mb-10'>
                     Bred for a high content of beneficial substance. Our products are all fresh and healthy
                 </p>
                 <Button content="Shop Now"/>
