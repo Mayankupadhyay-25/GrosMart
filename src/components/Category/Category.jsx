@@ -13,7 +13,7 @@ const rendreCards = categoury.map (card=>{
   return (
 
     //Card
-    <div key={card.id} className='flex-1 basis-[300px] '>
+    <div key={card.id} className='flex-1 basis-[300px]  '>
       {/* Card image  */}
 
       <div className='w-full min-h-[30vh] relative -mb-10' >
