@@ -7,4 +7,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  server: {
+    host: true // This exposes the server to the network
+  },
 })

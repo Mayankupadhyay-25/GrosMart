@@ -8,7 +8,7 @@ const Values = () => {
 
     const LeftValues = values.slice(0, 2).map(item =>{
         return(
-            <div className='flex md:flex-row-reverse items-center gap-7'>
+            <div key={item.id} className='flex md:flex-row-reverse items-center gap-7'>
                 <div className='w-1/2'>
                     <span className='flex justify-center items-center bg-gradient-to-b text-3xl text-white from-orange-400 to-orange-500 w-15 h-15 rounded-full'>{item.icon}</span>
                 </div>
@@ -22,7 +22,7 @@ const Values = () => {
 
     const rightValues = values.slice(2).map(item =>{
         return(
-            <div className='flex items-center gap-7 ' >
+            <div key={item.id} className='flex items-center gap-7 ' >
                 <div>
                     <span className='flex justify-center items-center bg-gradient-to-b text-3xl text-white from-orange-400 to-orange-500 w-15 h-15 rounded-full'>{item.icon}</span>
                 </div>
@@ -39,7 +39,7 @@ const Values = () => {
             <Heading highlight="Our" heading=" Values"/>
             <div className='flex md:flex-row flex-col md:gap-5 gap-15 mt-15'>
                 {/* Left Values  */}
-                <div className='md:min-h-100 gap-15 flex flex-col justify-between'>
+                <div className=' md:min-h-100 gap-15 flex flex-col justify-between'>
                     {LeftValues}
                 </div>
                 <div className='md:flex w-1/2 hidden'>
@@ -49,6 +49,7 @@ const Values = () => {
                 <div className='md:min-h-100 gap-15 flex flex-col justify-between'>
                     {rightValues}
                 </div>
+    
             </div>
         </div>
 
