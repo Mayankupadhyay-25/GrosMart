@@ -1,16 +1,20 @@
-import React from "react";
+import React, { act } from "react";
 import Heading from "../Heading/Heading";
 import ProductList from "../ProductList/ProductList";
-
 import Cards from "../Cards/Cards";
+import Button from "../Button/Button";
 
 const Products = () => {
-  const categories = ["ALL", "Fruits", "Vegetables", "Dairy", "Seafood"];
+
+  const categories = ["ALL", "Fruits", "Vegetables", "Dairy", "SeaFood"];
   const [activeTab, setActiveTab] = React.useState("ALL");
 
-  const renderCards = ProductList.map(product => {
+  let filtereditems = activeTab === "ALL" ? 
+  ProductList : ProductList.filter(item => item.category === activeTab)
+
+  const renderCards = filtereditems.slice(0, 8).map(product => {
     return( 
-        <Cards image={product.image}/>
+        <Cards image={product.image} name={product.name} price={product.price}/>
     )
   })
 
@@ -39,8 +43,15 @@ const Products = () => {
             );
           })}
         </div>
+
         {/* Product Listing  */}
-        <div>{renderCards}</div>
+        <div className="grid grid-cols-4 gap-9 mt-20">
+            {renderCards}
+        </div>
+
+        <div className="mt-15 mx-auto w-fit">
+            <Button content="View all"/>
+        </div>
       </div>
     </section>
   );

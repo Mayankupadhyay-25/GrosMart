@@ -44,7 +44,7 @@ const products = [
         id: 3,
         name: 'Eggs',
         price: 2.05,
-        category: 'Dairy',
+        category:'Dairy',
         image: Eggs
     },
     {
