@@ -25,7 +25,7 @@ const Products = () => {
 
         {/* Tabs  */}
 
-        <div className="flex gap-3 justify-center mt-10">
+        <div className="flex flex-wrap gap-3 justify-center mt-10">
           {categories.map((category) => {
             return (
               <button
@@ -45,11 +45,11 @@ const Products = () => {
         </div>
 
         {/* Product Listing  */}
-        <div className="grid grid-cols-4 gap-9 mt-20">
+        <div className="grid grid-col-1 md:grid-cols-4 gap-9 mt-20">
             {renderCards}
         </div>
 
-        <div className="mt-15 mx-auto w-fit">
+        <div className="mt-16 mx-auto w-fit">
             <Button content="View all"/>
         </div>
       </div>
