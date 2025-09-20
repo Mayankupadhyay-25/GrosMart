@@ -30,9 +30,9 @@ const Navbar = () => {
     <header className= {`bg-white fixed top-0 right-0 left-0 z-50 ${isScrolled ? 'shadow-lg' : ''} `}>
          <nav className="max-w-[1400px] mx-auto md:h-[14vh] h-[12vh] items-center px-10 flex justify-between ">
             {/* Logo */}
-            <a href="#" className="text-3xl font-bold ">
+          <a href="#" className="text-3xl font-bold ">
             Gr<span className='text-orange-500 uppercase'>o</span>sMart
-            </a>
+            </a>  
 
             {/* Desktop Menu */}
             <ul className="md:flex   items-center gap-x-18 hidden">
