@@ -10,7 +10,7 @@ const Process = () => {
 
     const renderSteps = steps.map(item=>{
         return(
-            <div className={`flex-1 ${item.id % 2 === 0 ? '-mt-100': ''}`}>
+            <div className={`flex-1 basis-[300px] ${item.id % 2 === 0 ? 'md:-mt-100': ''}`}>
                 <span className='flex justify-center items-center text-8xl rounded-full w-18 h-18 mx-auto bg-zinc-800 text-white outline-[3px] outline-offset-7 outline-zinc-800 outline-dashed '>{item.number}</span>
 
                 <div className='flex  items-center gap-x-5 mt-10'>
@@ -31,7 +31,7 @@ const Process = () => {
             <div className='w-fit mr-auto'>
                 <Heading highlight="Our" heading=" Process"/>
             </div>
-            <div className='flex flex-wrap items-center justify-center pt-50 mt-20'>
+            <div className='flex flex-wrap items-center justify-center md:pt-50 md:mt-20 mt-10'>
                 {renderSteps}
             </div>
         </div>
