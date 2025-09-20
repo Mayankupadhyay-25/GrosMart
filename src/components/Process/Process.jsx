@@ -31,7 +31,7 @@ const Process = () => {
             <div className='w-fit mr-auto'>
                 <Heading highlight="Our" heading=" Process"/>
             </div>
-            <div className='flex flex-wrap items-center justify-center md:pt-50 md:mt-20 mt-10'>
+            <div className='flex flex-wrap gap-y-17 items-center justify-center md:pt-50 md:mt-20 mt-10'>
                 {renderSteps}
             </div>
         </div>
