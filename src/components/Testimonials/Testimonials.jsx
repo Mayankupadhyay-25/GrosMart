@@ -1,11 +1,30 @@
 import React from 'react'
 import Heading from '../Heading/Heading'
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 
 const Testimonials = () => {
   return (
     <section>
         <div className='max-w-[1400px] px-10 mx-auto py-10'>
             <Heading highlight="Customers" heading=" saying"/>
+
+            <div className='flex justify-end py-5 gap-x-3'>
+              <button className='text-2xl text-zinc-800 rounded-lg w-11 h-11 flex justify-center items-center bg-zinc-100 hover:bg-gradient-to-b hover:from-orange-400 hover:to-orange-500 hover:text-white cursor-pointer '>
+                <IoIosArrowBack/>
+              </button>
+              <button className='text-2xl text-zinc-800 rounded-lg w-11 h-11 flex justify-center items-center bg-zinc-100 hover:bg-gradient-to-b hover:from-orange-400 hover:to-orange-500 hover:text-white cursor-pointer '>
+                <IoIosArrowForward/>
+              </button>
+
+            </div>
+
+            <div className='bg-zinc-100 rounded-xl p-8 '>
+
+              <div>
+                <div className='w-16 h-16 rounded-full bg-red-50'> </div>
+              </div>
+
+            </div>
         </div>
     </section>
   )
