@@ -50,7 +50,9 @@ const Products = () => {
         </div>
 
         <div className="mt-16 mx-auto w-fit">
-            <Button content="View all"/>
+            <Link to="/allproducts" className=" bg-gradient-to-b from-orange-400 to-orange-500 text-white px-8 py-3 rounded-lg md:text-lg text-md tegt-=,md hover:scale-105 hover:to-orange-600 transition-all duration-300 cursor-pointer" >
+            View All
+          </Link>
         </div>
       </div>
     </section>
