@@ -2,7 +2,7 @@ import React, { act } from "react";
 import Heading from "../Heading/Heading";
 import ProductList from "../ProductList/ProductList";
 import Cards from "../Cards/Cards";
-import Button from "../Button/Button";
+import { Link } from "react-router-dom";
 
 const Products = () => {
 

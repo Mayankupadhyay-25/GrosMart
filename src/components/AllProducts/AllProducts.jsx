@@ -1,11 +1,14 @@
 import React from 'react'
+import CategoryPage from '../CategoryPage/CategoryPage'
+import BgAll from '../../assets/all-banner.jpg'
 
 const AllProducts = () => {
   return (
-    <div>
-        <h1>All Product</h1>
+     <div>
+      <CategoryPage title="All Products" bgImage={BgAll} />
+
     </div>
-  )
+    )
 }
 
 export default AllProducts
