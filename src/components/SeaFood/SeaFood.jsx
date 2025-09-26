@@ -1,6 +1,6 @@
 
 import CategoryPage from "../CategoryPage/CategoryPage";
-import BgSeaFood from '../../assets/seaFood.jpg'
+import BgSeaFood from '/seafood.jpg'
 
 const SeaFood = () => {
   return (
