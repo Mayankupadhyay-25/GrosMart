@@ -1,5 +1,5 @@
 import treact,{ useEffect, useState } from 'react'
-import React from 'react'
+
 import { GoHeartFill } from "react-icons/go";
 import { HiShoppingBag } from "react-icons/hi2";
 import { IoSearchSharp } from "react-icons/io5";
